@@ -1,0 +1,14 @@
+<div style="background-color:#191970;text-align:center">
+  <h1 style="text-align:center; color:white">Word Counter</h1>
+</div>
+
+<div style="background-color:#191970; text-align:center">
+  <%= form_with url: "/words#index", method: :get do |form| %>
+    <%= form.text_area :text, value: @message %>
+    <br>
+    <%= form.submit "Count" %>
+  <% end %>
+</div>
+
+
+
